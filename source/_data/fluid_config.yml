@@ -25,17 +25,17 @@ code:  # 代码块相关的配置
     enable: true
     lib: 'highlightjs'  # 实现高亮的库，可选：highlightjs | prismjs，对应下面的配置项
     highlightjs:
-      style: 'Github Gist'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
-      bg_color: false  # 是否根据 style 改变代码背景色，**如果 style 是深色背景别忘了开启此项**
+      style: 'Vs 2015'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
+      bg_color: true  # 是否根据 style 改变代码背景色，**如果 style 是深色背景别忘了开启此项**
     prismjs:
-      style: 'default'  # 高亮样式见：https://prismjs.com/  在页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
+      style: 'OKAIDIA'  # 高亮样式见：https://prismjs.com/  在页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
       preprocess: true  # 设为 true 高亮将本地静态生成（并只支持部分 prismjs 插件），设为 false 高亮将在浏览器通过 js 生成
 
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
     enable: true
     typeSpeed: 70  # 打印速度，数字越大越慢
-    cursorChar: "_" # 游标字符
+    cursorChar: "✍" # 游标字符
     loop: false # 是否循环播放效果
   anchorjs: # 为文章内容中的标题添加锚图标
     enable: true
@@ -187,7 +187,7 @@ index:
     enable: true  # 为 false 则不显示任何内容
     text: 'Ask for more.'  # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
-    enable: true
+    enable: false
   post_url_target: _self  # available: _blank | _self
   post_meta: # 是否显示文章信息（时间、分类、标签）
     date: true
@@ -257,7 +257,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments:  # 评论
     enable: true  # 开启评论
-    type: disqus  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere | remark42
+    type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere | remark42
 
 
 #---------------------------
@@ -307,17 +307,18 @@ gitalk:
 # 完整文档 https://valine.js.org/configuration.html
 # 注意：下列配置项中的 true/false 不要用引号括起来
 valine:
-  appid:  # 从 LeanCloud 的应用中得到的 appId
-  appkey:  # 从 LeanCloud 的应用中得到的 APP Key
+  appid: IeX024sN6YKzo3OqXaubOmdG-gzGzoHsz # 从 LeanCloud 的应用中得到的 appId
+  appkey: F3ttLEjLr7s9YB4LfF6kCQL6 # 从 LeanCloud 的应用中得到的 APP Key
   placeholder: 说点什么 # 评论框占位提示符
   path: window.location.pathname # 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表
-  avatar: retro # Gravatar 头像展示方式
-  meta: ['nick', 'mail', 'link']  # 评论者相关属性
+  avatar: '' # Gravatar 头像展示方式
+  meta: ['nick', 'mail']  # 评论者相关属性
   pageSize: 10 # 评论列表分页，每页条数
-  lang: zh-CN # zh-CN | zh-TW | en | ja
-  highlight: false # 代码高亮
+  lang: zh-CN | zh-TW | en | ja
+  highlight: true # 代码高亮
   recordIP: false # 是否记录评论者IP
   serverURLs:  # REST API 服务器地址，国际版不填
+  enableQQ: true # 启用昵称框自动获取QQ昵称和QQ头像
 
 # 畅言
 # http://changyan.kuaizhan.com/
