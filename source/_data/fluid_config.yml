@@ -309,7 +309,7 @@ gitalk:
 valine:
   appid: IeX024sN6YKzo3OqXaubOmdG-gzGzoHsz # 从 LeanCloud 的应用中得到的 appId
   appkey: F3ttLEjLr7s9YB4LfF6kCQL6 # 从 LeanCloud 的应用中得到的 APP Key
-  placeholder: 说点什么 # 评论框占位提示符
+  placeholder: 在昵称中留下QQ号，系统将会自动获取QQ昵称、邮箱及头像，以便收到回复通知~ # 评论框占位提示符
   path: window.location.pathname # 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表
   avatar: '' # Gravatar 头像展示方式
   meta: ['nick', 'mail']  # 评论者相关属性
@@ -392,9 +392,9 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   name: myname
   introduce: '非科班菜鸟' # 支持 HTML
   icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class
-    - { class: 'iconfont icon-github-fill', link: 'https://github.com', tip: 'GitHub' }
-    - { class: 'iconfont icon-douban-fill', link: 'https://douban.com', tip: '豆瓣' }
-    - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/DennisMingzhi', tip: 'GitHub' }
+    # - { class: 'iconfont icon-douban-fill', link: 'https://douban.com', tip: '豆瓣' }
+    # - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
 
 
 #---------------------------
