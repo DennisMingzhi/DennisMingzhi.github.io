@@ -107,3 +107,6 @@ deploy:
   repo: 
     github: https://github.com/DennisMingzhi/DennisMingzhi.github.io.git
   branch: master
+
+# 开启hexo-all-minifier压缩
+all_minifier: true
