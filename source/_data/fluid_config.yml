@@ -77,7 +77,7 @@ color:  # 主题颜色配置，不一定能每一处都生效，可能会被局�
 
 font:  # 主题字体配置
   font_size: 16px                   # 全局字号
-  font_family:                      # 全局字体
+  font_family: sans-serif                     # 全局字体
   code_font_size: 85%               # 代码的字号
 
 custom_js:   # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js，支持列表
@@ -224,7 +224,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
       words: 100  # 每分钟阅读多少字，如果是技术文章，建议降低
     views:  # 阅读次数
       enable: true
-      source: "busuanzi"  # 统计数据来源，可选：busuanzi | leancloud，使用 leancloud 需要在 web_analytics 中设置 api 参数，使用 busuanzi 注意可能间歇抽风
+      source: "leancloud"  # 统计数据来源，可选：busuanzi | leancloud，使用 leancloud 需要在 web_analytics 中设置 api 参数，使用 busuanzi 注意可能间歇抽风
       format: "{} 次"
   updated:  # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
     enable: true
@@ -355,7 +355,7 @@ archive:
 #---------------------------
 category:
   banner_img: /img/background-2.jpg
-  banner_img_height: 60  # available: 0 - 100
+  banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
   post_limit: 10  # 单个分类中折叠展示文章数的最大值，超过限制会显示 More
@@ -388,8 +388,8 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
-  avatar: /img/avatar.png # 头像
-  name: myname
+  avatar: /img/logo.jpg # 头像
+  name: 黄明治
   introduce: '非科班菜鸟' # 支持 HTML
   icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class
     - { class: 'iconfont icon-github-fill', link: 'https://github.com/DennisMingzhi', tip: 'GitHub' }
