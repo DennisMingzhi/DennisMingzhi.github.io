@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Dennis Wong's space
+title: wongmz's space
 subtitle: ''
 description: '笨鸟先飞'
 keywords:
-author: Dennis Wong
+author: wongmz
 language: zh-CN
 timezone: ''
 
@@ -105,7 +105,7 @@ theme: fluid
 deploy:
   type: git
   repo: 
-    github: https://github.com/DennisMingzhi/DennisMingzhi.github.io.git
+    github: https://github.com/wongmz/wongmz.github.io.git
   branch: master
 
 # 开启hexo-all-minifier压缩
